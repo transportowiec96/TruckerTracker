@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+<style>
+  @font-face 
+  {
+    font-family: coolfont;
+    src: url(coolfont.otf);
+  }
+  *
+  {
+    margin: 0px;
+    padding:0px;
+    font-size: 1.1em;
+    color:orange;
+    font-family: coolfont;
+  }
+  body
+  {
+    background:#1e1e1e;
+    background-image:url('bg.jpg');
+    text-align: center;
+  }
+  select,button,option,input
+  {
+    color:white;
+    background:#1e1e1e;
+  }
+  input[type='checkbox'] 
+  {
+    width:1.1em;
+    height:1.1em;
+    vertical-align: middle;
+  }
+  #statsboard
+  {
+    display:none;
+  }
+  table
+  {
+    width:100%;
+  }
+  img
+  {
+    max-width:100%;
+    max-height:100%;
+  }
+  td
+  {
+    background-image:url('answer.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+  }
+  tr
+  {
+    border:0px solid white;
+  }
+</style>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="theme-color" content="#1e1e1e" />
+    <link rel="shortcut icon" href="favicon.ico">
+	  <meta name="Description" content="Galaxy Trucker Stat Tracker">
+    <title>Galaxy Trucker Stat Tracker</title>
+  </head>
+<body>
+<div id='main_menu'>
+  <p>
+    GALAXY TRUCKER: STAT TRACKER
+  </p>
+  <p>
+    Select players:
+  </p>
+  <p>
+    <img src='blue.png' alt='blue' onclick="AmIPressed(this)">
+    <img src='green.png' alt='green' onclick="AmIPressed(this)">
+    <img src='red.png' alt='red' onclick="AmIPressed(this)">
+    <img src='yellow.png' alt='yellow' onclick="AmIPressed(this)">
+    <img src='orange.png' alt='orange' onclick="AmIPressed(this)">
+  </p>
+  ABE<input type='checkbox' id='anotherbigexpansion'><br>
+  <button onclick="Proceed()">All done!</button><br>
+  I do not own any assets that are here. These assets belong to Czech Games Edition. Support CGE by buying their games & apps!
+</div>
+<div id='statsboard'>
+hello
+</div>
+<script src="server.js"></script>
+</body>
+</html>
